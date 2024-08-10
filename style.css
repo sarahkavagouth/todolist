@@ -1,0 +1,130 @@
+body {
+    font-family: "Libre Baskerville", serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    height: 800px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #003368;
+}
+
+img {
+    width: 250px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0a335e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #08294b;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.task-checkbox {
+    border: solid #003368;
+    margin-right: 10px;
+}
+
+
+.task-text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #003368;
+}
+
+.actions button:hover {
+    color: #003368;
+}
+
+
+.edit-input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.task-checkbox:checked + .task-text {
+    text-decoration: line-through;
+    color: #aaa; 
+}
+
+.task-checkbox button {
+    background-color: #08294b;
+}
+
+.task-checkbox:checked + .custom-checkbox {
+    background-color: #003368;
+}
+
+.taskList button{
+    background-color: #003368;
+}
+
+.input-container:checked{
+    background-color: #003368;
+}
